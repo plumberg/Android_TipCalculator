@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.gryzhuk.tipcalculator.R;
 
@@ -133,6 +134,14 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        else if (id == R.id.menu_calculate){
+            //action and
+            return true;
+        }
+        else if (id==R.id.menu_resetAll){
+            //action
+            return true;
+        }
 
         return super.onOptionsItemSelected (item);
     }
@@ -222,4 +231,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    public void showAbout(MenuItem item) {
+        //called when user clicks About
+        Toast.makeText(getApplicationContext(),"About...",Toast.LENGTH_LONG).show();
+
+    }
 }
