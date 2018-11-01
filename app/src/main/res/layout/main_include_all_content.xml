@@ -3,4 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include
+        layout="@layout/main_include_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<include
+    layout="@layout/main_include_fields"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ll_margin"/>
+
 </LinearLayout>

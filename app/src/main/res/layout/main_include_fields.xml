@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/ll_margin"
+        android:orientation="vertical"
+    >
+        <TableRow android:gravity="center">
+            <TextView />
+            <EditText />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView />
+            <EditText />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <TextView />
+            <EditText />
+        </TableRow>
+
+    </TableLayout>
+</android.support.v7.widget.CardView>
