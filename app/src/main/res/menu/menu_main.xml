@@ -12,20 +12,13 @@
     <item
         android:id="@+id/menu_calculate"
         android:icon="@drawable/ic_launch_white"
-        android:title="Item"
+        android:title="@string/action_calculate"
         app:showAsAction="ifRoom|withText" />
 
     <item android:id="@+id/menu_resetAll"
-        android:icon="@drawable/ic_clear_white"
-        android:title="@string/action_reset_all"
-        app:showAsAction="ifRoom|withText" />
-
-
-    <item
-        android:id="@+id/menu_settings"
         android:icon="@drawable/ic_clear_all_white"
         android:title="Reset All"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom|withText" />
 
     <item
         android:id="@+id/action_settings"
@@ -34,7 +27,6 @@
         app:showAsAction="never" />
 
     <item
-
         android:icon="@drawable/ic_info_white"
         android:title="About"
         app:showAsAction="never"
