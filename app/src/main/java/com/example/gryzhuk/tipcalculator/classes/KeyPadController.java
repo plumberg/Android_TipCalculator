@@ -1,4 +1,4 @@
-package classes;
+package com.example.gryzhuk.tipcalculator.classes;
 
 import android.content.Context;
 import android.text.Editable;

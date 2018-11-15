@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Activity Titles (Note: Main Activity uses the app name) -->
     <string name="app_name">Tip Calculator</string>
@@ -8,7 +9,7 @@
     <string name="background_image">background image</string>
     <string name="action_about">About</string>
     <string name="about_dialog_title">About Tip Calculator</string>
-    <string name="about_dialog_banner"><![CDATA[Created and © 2015–2019 Samuel A.\nEMail: mintedtech@gmail.com\n\nThank you to:\nTouro College\'s Lander College MCO 451/521 students for their thoughts and ideas.]]></string>
+    <string name="about_dialog_banner"><![CDATA[Created and © 2015–2019 Samuel A.\nEMail: mintedtech@gmail.com\n\nThank you to:\nTouro College\'s Lander Colleges\' MCO451/521 students for their thoughts and ideas.]]></string>
 
     <!-- Main Activity -->
     <string name="banner_message">Please input the numbers.</string>
@@ -27,7 +28,10 @@
     <string name="space"> </string>
     <string name="zero_point_zero_zero">0.00</string>
 
-    <string name="defaultPayers">1</string>
+    <string name="default_payers">1</string>
+    <string name="hint_subtotal">100</string>
+    <string name="hint_tip_pct">20.00</string>
+    <string name="hint_tax_amount">0.00</string>
 
     <!-- Keypad -->
     <string name="one">1</string>

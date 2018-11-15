@@ -1,4 +1,4 @@
-package classes;
+package com.example.gryzhuk.tipcalculator.classes;
 
 import com.google.gson.Gson;
 

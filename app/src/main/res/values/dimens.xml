@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -5,7 +6,6 @@
     <dimen name="ll_margin">2dp</dimen>
     <dimen name="card_view_default_elevation">2dp</dimen>
     <dimen name="results_field_margin">4dp</dimen>
-    <dimen name="activity_textView_margin">1dp</dimen>
 
     <dimen name="fab_margin">16dp</dimen>
 
@@ -31,4 +31,6 @@
 
     <!-- The numberPad will have its own minimum height and width -->
     <dimen name="numberPad_minWidth">125dp</dimen>
+
+    <!-- Elevation for the Arrow Buttons -->
 </resources>

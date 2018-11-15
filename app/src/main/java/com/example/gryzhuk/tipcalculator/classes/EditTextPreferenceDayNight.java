@@ -1,4 +1,4 @@
-package classes;
+package com.example.gryzhuk.tipcalculator.classes;
 
 import android.annotation.TargetApi;
 import android.content.Context;

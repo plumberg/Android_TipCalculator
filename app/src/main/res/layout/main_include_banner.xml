@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.AppBarLayout
+
+<TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/ll_margin"
+    android:background="@color/colorPrimaryDark"
     android:gravity="center"
+    android:lines="1"
+    android:padding="@dimen/ll_margin"
+    android:text="@string/banner_message"
+    android:textColor="@android:color/primary_text_dark"
+    android:textSize="@dimen/banner_text_size"
+    android:textStyle="bold"
     app:elevation="@dimen/appBar_elevation"
-    android:background="@color/colorPrimaryDark">
-
-    <TextView
-android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="1"
-        android:text="@string/banner_message"
-        android:textSize="@dimen/banner_text_size"
-
-        android:textColor="@android:color/primary_text_dark"/>
-</android.support.design.widget.AppBarLayout>
-<!--upper background layout-->
-
-   <!-- didn't use
-   android:textStyle="bold"-->
+    tools:ignore="Overdraw"/>

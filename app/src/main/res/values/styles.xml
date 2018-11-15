@@ -62,7 +62,7 @@
         <item name="checkboxStyle">@style/ColoredCheckBoxStyle</item>
     </style>
 
-    <!-- This theme is not used here, but is used for an AlertDialog-type Activity -->
+    <!-- This theme is not used here, but is used for an AlertDialog-type Activity
     <style name="AppThemeDialog" parent="Theme.AppCompat.DayNight.Dialog">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -83,6 +83,7 @@
         <item name="checkboxStyle">@style/ColoredCheckBoxStyle</item>
 
     </style>
+    -->
 
     <!-- The following two styles have no changes from their parents, but in case we do later... -->
     <!-- Needed even with DayNight to use a Dark ActionBar (with light text) even during day -->
@@ -115,25 +116,133 @@
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
+    <!-- These styles are used to eliminate redundancies in XML and code -->
+    <style name="borderlessButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium.Inverse</item>
+        <item name="android:minHeight">@dimen/button_minHeight</item>
+        <item name="android:minWidth">@dimen/button_minWidth</item>
+    </style>
 
-    <!--
-        &lt;!&ndash; Base application theme. &ndash;&gt;
-        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-            &lt;!&ndash; Customize your theme here. &ndash;&gt;
-            <item name="colorPrimary">@color/colorPrimary</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-            <item name="colorAccent">@color/colorAccent</item>
-        </style>
+    <style name="borderlessButtonStyle.ToolButtonStyle">
+        <item name="android:minWidth">@dimen/toolButton_minWidth</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
-        <style name="AppTheme.NoActionBar">
-            <item name="windowActionBar">false</item>
-            <item name="windowNoTitle">true</item>
-        </style>
+    <style name="borderlessButtonStyle.NumberPadButtonStyle">
+        <item name="android:minWidth">@dimen/numberPad_minWidth</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:onClick">cmdKeypad</item>
+    </style>
 
-        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="arrowButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:minWidth">@dimen/arrowButton_minWidth</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="elevation">2dp</item>
+    </style>
 
-        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-    -->
+    <style name="arrowButtonStyle.up">
+        <item name="android:drawableTop">@drawable/ic_keyboard_arrow_up_black</item>
+        <item name="android:onClick">cmdArrowUp</item>
+    </style>
+
+    <style name="arrowButtonStyle.down">
+        <item name="android:drawableTop">@drawable/ic_keyboard_arrow_down_black</item>
+        <item name="android:onClick">cmdArrowDown</item>
+    </style>
+
+    <style name="CardViewSemiTransparent" parent="CardView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:alpha">.7</item>
+        <item name="cardBackgroundColor">@color/colorDefaultBackground</item>
+        <item name="cardCornerRadius">@dimen/ll_margin</item>
+        <item name="cardElevation">@dimen/card_view_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+    </style>
+
+    <style name="coloredTableLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/divider_padding</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:divider">?android:dividerHorizontal</item>
+        <item name="android:dividerPadding">@dimen/divider_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="tableRowButtonBarStyle" parent="Widget.AppCompat.ButtonBar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:divider">?android:dividerHorizontal</item>
+        <item name="android:dividerPadding">@dimen/divider_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="fieldsEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/textView_text_size</item>
+        <item name="android:maxEms">5</item>
+    </style>
+
+    <style name="fieldsTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/divider_padding</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textView_text_size</item>
+    </style>
+
+    <style name="fieldsTextView.instructions">
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="fieldsTextView.symbol">
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fieldsTextView.resultsHeader">
+        <item name="android:layout_marginLeft">@dimen/results_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/results_field_margin</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="fieldsTextView.resultsDataNormal">
+        <item name="android:layout_marginLeft">@dimen/results_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/results_field_margin</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fieldsTextView.resultsDataItalic">
+        <item name="android:layout_marginLeft">@dimen/results_field_margin</item>
+        <item name="android:layout_marginRight">@dimen/results_field_margin</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="FAB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:src">@drawable/ic_launch_white</item>
+    </style>
 
 
 </resources>

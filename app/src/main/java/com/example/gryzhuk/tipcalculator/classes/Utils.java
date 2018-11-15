@@ -1,4 +1,4 @@
-package classes;
+package com.example.gryzhuk.tipcalculator.classes;
 
 import android.Manifest;
 import android.app.Activity;

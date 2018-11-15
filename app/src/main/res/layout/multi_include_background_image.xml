@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:alpha="0.5"
-    android:src="@drawable/dinner"
+    android:alpha="0.8"
+    android:contentDescription="@string/background_image"
     android:scaleType="centerCrop"
-    tools:showIn="@layout/content_main" />
-
-    <!--android:alpha="0.5" это прозрачность-->
+    android:src="@drawable/dinner"/>
